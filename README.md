@@ -88,7 +88,7 @@ Illustrative time model for a 50-page monitoring cycle:
 - Automated exception review: 15 minutes.
 - Estimated time saved: 100 minutes per cycle (87% of the assumed 115 minutes), excluding remediation.
 
-These are assumptions, not observed work timings. Replace them with stopwatch measurements from comparable manual and automated runs. The [measurement guide](docs/business-impact.md) includes the calculation and a framework to connect incident duration with affected landing sessions, enquiries and applications. Revenue protected cannot be claimed without attributable downstream data.
+ Replace them with stopwatch measurements from comparable manual and automated runs. The [measurement guide](docs/business-impact.md) includes the calculation and a framework to connect incident duration with affected landing sessions, enquiries and applications. Revenue protected cannot be claimed without attributable downstream data.
 
 ## Technical decisions
 
