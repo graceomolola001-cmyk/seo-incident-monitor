@@ -1,0 +1,23 @@
+{
+  "data": "synthetic",
+  "incident": {
+    "checks": 36,
+    "known": 26,
+    "coverage": 72,
+    "health": 69,
+    "open": 8,
+    "newAlerts": 8
+  },
+  "repeat": {
+    "newAlerts": 0,
+    "checklistRows": 8
+  },
+  "recovery": {
+    "verifiedFixed": 7,
+    "open": 1,
+    "coverage": 89,
+    "health": 97,
+    "newAlerts": 0
+  },
+  "designerFieldsPreserved": true
+}

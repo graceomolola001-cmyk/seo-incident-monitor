@@ -1,0 +1,1 @@
+{"name":"seo-incident-monitor","version":"1.0.0","private":true,"description":"Sanitized technical SEO incident detection and remediation demo","scripts":{"test":"node --test tests/*.test.js","demo":"node src/demo.js","workflow":"node src/build-workflow.js"},"engines":{"node":">=20"}}

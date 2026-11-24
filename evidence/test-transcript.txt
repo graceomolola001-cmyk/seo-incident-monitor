@@ -1,0 +1,97 @@
+Local verification (Node.js v22.16.0)
+Synthetic fixtures only.
+
+
+> seo-incident-monitor@1.0.0 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: detects critical page/noindex, bad redirect, broken link and slow LCP
+ok 1 - detects critical page/noindex, bad redirect, broken link and slow LCP
+  ---
+  duration_ms: 10.27034
+  type: 'test'
+  ...
+# Subtest: missing data is unknown and failed fetch does not clear issue
+ok 2 - missing data is unknown and failed fetch does not clear issue
+  ---
+  duration_ms: 2.155507
+  type: 'test'
+  ...
+# Subtest: same incident does not duplicate tasks or alerts after acknowledgement
+ok 3 - same incident does not duplicate tasks or alerts after acknowledgement
+  ---
+  duration_ms: 0.695762
+  type: 'test'
+  ...
+# Subtest: human checkbox does not resolve issue; independent recovery does
+ok 4 - human checkbox does not resolve issue; independent recovery does
+  ---
+  duration_ms: 0.428928
+  type: 'test'
+  ...
+# Subtest: recovery leaves real unindexed page open; recurrence starts a new alert
+ok 5 - recovery leaves real unindexed page open; recurrence starts a new alert
+  ---
+  duration_ms: 0.448828
+  type: 'test'
+  ...
+# Subtest: new post gets grace period; missing field data not counted as good
+ok 6 - new post gets grace period; missing field data not counted as good
+  ---
+  duration_ms: 0.237929
+  type: 'test'
+  ...
+# Subtest: empty data suppresses health; duplicate check keys rejected
+ok 7 - empty data suppresses health; duplicate check keys rejected
+  ---
+  duration_ms: 0.480256
+  type: 'test'
+  ...
+# Subtest: HTML escaping and spreadsheet injection protection
+ok 8 - HTML escaping and spreadsheet injection protection
+  ---
+  duration_ms: 1.366965
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 97.903016
+
+> seo-incident-monitor@1.0.0 demo
+> node src/demo.js
+
+{
+  "data": "synthetic",
+  "incident": {
+    "checks": 36,
+    "known": 26,
+    "coverage": 72,
+    "health": 69,
+    "open": 8,
+    "newAlerts": 8
+  },
+  "repeat": {
+    "newAlerts": 0,
+    "checklistRows": 8
+  },
+  "recovery": {
+    "verifiedFixed": 7,
+    "open": 1,
+    "coverage": 89,
+    "health": 97,
+    "newAlerts": 0
+  },
+  "designerFieldsPreserved": true
+}
+
+> seo-incident-monitor@1.0.0 workflow
+> node src/build-workflow.js
+
+Embedded workflow code parity passed: {"initial":{"flags":8,"health":69,"coverage":72},"repeat":{"pending":0,"rows":8},"recovery":{"fixed":7,"open":1,"health":97,"coverage":89},"designerFieldsPreserved":true}

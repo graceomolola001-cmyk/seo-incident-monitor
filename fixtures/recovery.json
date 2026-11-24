@@ -1,0 +1,75 @@
+{
+  "at": "2026-01-06T08:00:00Z",
+  "pages": [
+    {
+      "url": "https://campus.example/",
+      "http": 200,
+      "noindex": false,
+      "canonical": "https://campus.example/",
+      "title": "Learning online",
+      "description": "Explore courses",
+      "schemaValid": true,
+      "integrity": true,
+      "googlebotAllowed": true,
+      "indexed": true,
+      "ageDays": 100,
+      "field": {
+        "lcp": 2100,
+        "inp": 180,
+        "cls": 0.05
+      },
+      "links": [
+        {
+          "url": "https://campus.example/apply/",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "url": "https://campus.example/apply/",
+      "http": 200,
+      "indexed": false,
+      "ageDays": 30,
+      "field": {},
+      "noindex": false,
+      "canonical": "https://campus.example/apply/",
+      "title": "Apply",
+      "description": "Application form",
+      "schemaValid": true,
+      "integrity": true,
+      "googlebotAllowed": true
+    },
+    {
+      "url": "https://campus.example/programmes/",
+      "http": 200,
+      "noindex": false,
+      "canonical": "https://campus.example/programmes/",
+      "title": "Programmes",
+      "description": "Study options",
+      "schemaValid": true,
+      "integrity": true,
+      "googlebotAllowed": true,
+      "indexed": true,
+      "ageDays": 30,
+      "field": {
+        "lcp": 2200,
+        "inp": null,
+        "cls": 0.02
+      }
+    }
+  ],
+  "redirects": [
+    {
+      "url": "https://campus.example/courses/",
+      "first": 301,
+      "target": "https://campus.example/programmes/",
+      "expected": "https://campus.example/programmes/",
+      "final": 200
+    }
+  ],
+  "ssl": {
+    "url": "https://campus.example/",
+    "valid": true,
+    "days": 60
+  }
+}
